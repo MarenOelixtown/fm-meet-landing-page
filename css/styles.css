@@ -23,4 +23,43 @@ body {
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.1;
   color: var(--slate-900);
+  text-align: center;
+  min-height: 100vh;
 }
+.main {
+  padding: 2rem;
+}
+.header {
+  margin-top: 3rem;
+}
+.hero__img {
+  display: block;
+  width: 108%;
+  height: auto;
+  transform: translateX(-1rem);
+  margin-top: 4rem;
+}
+.hero {
+  margin: 3rem 2rem 2rem 2rem;
+}
+.hero__title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.hero__text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--slate-600);
+  margin: 1.5rem 0;
+}
+/* 
+
+
+
+.content {
+  padding: 2rem;
+}
+.footer {
+  padding-bottom: 4rem;
+}
+ */
