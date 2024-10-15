@@ -55,7 +55,7 @@ body {
   margin-top: 4rem;
 }
 .hero {
-  margin: 3rem 2rem 2rem 2rem;
+  margin: 3rem 2rem 0 2rem;
 }
 .hero__heading {
   font-size: clamp(3rem, 4vw, 4rem);
@@ -82,6 +82,27 @@ body {
 .content__img-container img {
   border-radius: 10px;
 }
+.separator {
+  border-left: 1px solid var(--slate-300);
+  height: 166px;
+  display: inline-block;
+  position: relative;
+}
+.separator__number {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: -35px;
+  background-color: var(--white);
+  color: var(--slate-600);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 1.5rem;
+  border: 1px solid var(--slate-300);
+  border-radius: 50%;
+}
+
 .footer {
   color: var(--white);
   background-image: linear-gradient(
@@ -90,6 +111,7 @@ body {
     ),
     url(/assets/mobile/image-footer.webp);
   background-size: contain;
+  margin-top: -40px;
 }
 .footer__description {
   color: var(--white);
