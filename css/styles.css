@@ -58,7 +58,7 @@ body {
   margin: 3rem 2rem 0 2rem;
 }
 .hero__heading {
-  font-size: clamp(3rem, 4vw, 4rem);
+  font-size: clamp(3rem, 8vw, 4rem);
 }
 .content__description {
   margin: 0;
@@ -149,4 +149,21 @@ body {
 }
 .button--purple span {
   color: var(--purple-300);
+}
+
+@media (min-width: 37.5em) {
+  .hero {
+    max-width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .button--purple {
+    margin-left: 1rem;
+  }
+  .content,
+  .footer__description {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
