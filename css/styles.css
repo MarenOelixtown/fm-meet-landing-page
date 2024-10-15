@@ -28,9 +28,11 @@ body {
   text-align: center;
   min-height: 100vh;
 }
-.main {
-  padding: 2rem;
+.main,
+.footer {
+  padding: 4rem 2rem;
 }
+
 .header {
   margin-top: 3rem;
 }
@@ -38,6 +40,7 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--slate-600);
+  margin: 1.5rem 0;
 }
 .heading {
   font-size: clamp(2.2rem, 4vw, 3rem);
@@ -57,8 +60,8 @@ body {
 .hero__heading {
   font-size: clamp(3rem, 4vw, 4rem);
 }
-.hero__description {
-  margin: 1.5rem 0;
+.content__description {
+  margin: 0;
 }
 .content__heading {
   margin: 1rem 0 2rem 0;
@@ -68,6 +71,18 @@ body {
   font-size: clamp(0.8rem, 3vw, 1rem);
   letter-spacing: 0.3rem;
   color: var(--cyan-600);
+}
+.footer {
+  color: var(--white);
+  background-image: linear-gradient(
+      rgba(77, 151, 169, 0.9),
+      rgba(77, 151, 169, 0.9)
+    ),
+    url(/assets/mobile/image-footer.webp);
+  background-size: contain;
+}
+.footer__description {
+  color: var(--white);
 }
 .button {
   display: inline-block;
@@ -103,15 +118,3 @@ body {
 .button--purple span {
   color: var(--purple-300);
 }
-
-/* 
-
-
-
-.content {
-  padding: 2rem;
-}
-.footer {
-  padding-bottom: 4rem;
-}
- */
