@@ -34,6 +34,16 @@ body {
 .header {
   margin-top: 3rem;
 }
+.description {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--slate-600);
+}
+.heading {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
 .hero__img {
   display: block;
   width: 108%;
@@ -44,15 +54,20 @@ body {
 .hero {
   margin: 3rem 2rem 2rem 2rem;
 }
-.hero__title {
+.hero__heading {
   font-size: clamp(3rem, 4vw, 4rem);
-  font-weight: 900;
 }
-.hero__text {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--slate-600);
+.hero__description {
   margin: 1.5rem 0;
+}
+.content__heading {
+  margin: 1rem 0 2rem 0;
+}
+.content__sub-heading {
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 3vw, 1rem);
+  letter-spacing: 0.3rem;
+  color: var(--cyan-600);
 }
 .button {
   display: inline-block;
