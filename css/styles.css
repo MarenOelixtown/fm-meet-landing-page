@@ -72,6 +72,16 @@ body {
   letter-spacing: 0.3rem;
   color: var(--cyan-600);
 }
+.content__img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem 0;
+}
+.content__img-container img {
+  border-radius: 10px;
+}
 .footer {
   color: var(--white);
   background-image: linear-gradient(
