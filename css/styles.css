@@ -115,11 +115,13 @@ body {
       rgba(77, 151, 169, 0.9)
     ),
     url(/assets/mobile/image-footer.webp);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-top: -40px;
 }
 .footer__description {
   color: var(--white);
+  max-width: 36rem;
 }
 .button {
   display: inline-block;
@@ -165,6 +167,15 @@ body {
   }
   .button--purple {
     margin-left: 1rem;
+  }
+  .footer {
+    background-image: linear-gradient(
+        rgba(77, 151, 169, 0.9),
+        rgba(77, 151, 169, 0.9)
+      ),
+      url(/assets/tablet/image-footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
