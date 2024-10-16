@@ -22,45 +22,85 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <header><img src="/assets/logo.svg" alt="meet - logo" /></header>
-    <main>
+    <header class="header">
+      <div class="logo"><img src="/assets/logo.svg" alt="meet - logo" /></div>
+
+      <picture
+        ><source
+          srcset="/assets/desktop/image-hero-left.webp"
+          media="(min-width: 1200px)" />
+        <img src="/assets/tablet/image-hero.webp" alt="" class="hero__img"
+      /></picture>
+
       <section class="hero">
-        <img src="/assets/tablet/image-hero.webp" alt="" />
-        <h1>Group Chat for Everyone</h1>
-        <p>
+        <h1 class="heading hero__heading">Group Chat for Everyone</h1>
+        <p class="description">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <a href="#"><p>Download v1.3</p></a>
-        <a href="#"><p>What is it?</p></a>
+        <a href="#" class="button button--cyan" download
+          >Download <span>v1.3</span></a
+        >
+        <a href="#content" class="button button--purple">What is it?</a>
       </section>
-      <section class="content">
-        <p>01</p>
-        <img src="/assets/desktop/image-woman-in-videocall_2.webp" alt="" />
-        <img src="/assets/desktop/image-women-videochatting_2.webp" alt="" />
-        <img src="/assets/desktop/image-man-texting.webp" alt="" />
-        <img src="/assets/desktop/image-men-in-meeting_2.webp" alt="" />
+      <picture
+        ><source
+          srcset="/assets/desktop/image-hero-right.webp"
+          media="(min-width: 1200px)" />
+        <img src="" alt="" class="hero__img"
+      /></picture>
+    </header>
+    <main class="main">
+      <div role="separator" class="separator">
+        <p class="separator__number">01</p>
+      </div>
+      <div class="content__img-container">
+        <img
+          src="/assets/desktop/image-woman-in-videocall_2.webp"
+          alt=""
+          height="256"
+        />
+        <img
+          src="/assets/desktop/image-women-videochatting_2.webp"
+          alt=""
+          height="256"
+        />
+        <img
+          src="/assets/desktop/image-men-in-meeting_2.webp"
+          alt=""
+          height="256"
+        />
+        <img src="/assets/desktop/image-man-texting.webp" alt="" height="256" />
+      </div>
+      <section id="content" class="content">
         <hgroup>
-          <p>Built for modern use</p>
-          <h2>Smarter meetings, all in one place</h2>
+          <p class="heading content__sub-heading">Built for modern use</p>
+          <h2 class="heading content__heading">
+            Smarter meetings, all in one place
+          </h2>
         </hgroup>
-        <p>
+        <p class="description content__description">
           Send messages, share files, show your screen, and record your meetings
           — all in one workspace. Control who can join with invite-only team
           access, data encryption, and data export.
         </p>
       </section>
     </main>
-    <footer>
-      <p>02</p>
-      <h2>Experience more together</h2>
-      <p>
+    <div role="separator" class="separator">
+      <p class="separator__number">02</p>
+    </div>
+    <footer class="footer">
+      <h2 class="heading footer__heading">Experience more together</h2>
+      <p class="description footer__description">
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
-      <a href="#"><p>Download v1.3</p></a>
+      <a href="#" class="button button--purple" download
+        ><p>Download <span>v1.3</span></p></a
+      >
     </footer>
   </body>
 </html>
