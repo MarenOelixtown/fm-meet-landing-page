@@ -26,8 +26,15 @@
   </head>
   <body>
     <header class="header">
-      <img src="/assets/logo.svg" alt="meet - logo" />
-      <img src="/assets/tablet/image-hero.webp" alt="" class="hero__img" />
+      <div class="logo"><img src="/assets/logo.svg" alt="meet - logo" /></div>
+
+      <picture
+        ><source
+          srcset="/assets/desktop/image-hero-left.webp"
+          media="(min-width: 1200px)" />
+        <img src="/assets/tablet/image-hero.webp" alt="" class="hero__img"
+      /></picture>
+
       <section class="hero">
         <h1 class="heading hero__heading">Group Chat for Everyone</h1>
         <p class="description">
@@ -39,6 +46,12 @@
         >
         <a href="#content" class="button button--purple">What is it?</a>
       </section>
+      <picture
+        ><source
+          srcset="/assets/desktop/image-hero-right.webp"
+          media="(min-width: 1200px)" />
+        <img src="" alt="" class="hero__img"
+      /></picture>
     </header>
     <main class="main">
       <div role="separator" class="separator">

@@ -167,3 +167,31 @@ body {
     margin-right: auto;
   }
 }
+
+@media (min-width: 75em) {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+  }
+
+  .logo {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .hero__img,
+  .hero {
+    flex: 1;
+    margin: 0;
+  }
+  .hero {
+    padding: 0 2rem;
+    max-width: 33%;
+  }
+  .button--cyan {
+    margin-bottom: 0;
+  }
+}
