@@ -56,9 +56,13 @@ body {
 }
 .hero {
   margin: 3rem 2rem 0 2rem;
+  max-width: 29rem;
 }
 .hero__heading {
   font-size: clamp(3rem, 8vw, 4rem);
+}
+.content {
+  max-width: 34rem;
 }
 .content__description {
   margin: 0;
@@ -81,6 +85,7 @@ body {
 }
 .content__img-container img {
   border-radius: 10px;
+  height: 150px;
 }
 .separator {
   border-left: 1px solid var(--slate-300);
@@ -152,19 +157,14 @@ body {
 }
 
 @media (min-width: 37.5em) {
-  .hero {
-    max-width: 55%;
+  .hero,
+  .content,
+  .footer__description {
     margin-left: auto;
     margin-right: auto;
   }
   .button--purple {
     margin-left: 1rem;
-  }
-  .content,
-  .footer__description {
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -188,10 +188,13 @@ body {
     margin: 0;
   }
   .hero {
-    padding: 0 2rem;
-    max-width: 33%;
+    padding-left: clamp(0, 4vw, 2rem);
+    padding-right: clamp(0, 4vw, 2rem);
   }
   .button--cyan {
     margin-bottom: 0;
+  }
+  .content__img-container img {
+    height: 256px;
   }
 }
