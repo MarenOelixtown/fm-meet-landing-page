@@ -142,7 +142,8 @@ body {
   margin-bottom: 1rem;
 }
 .button--cyan:hover,
-.button--cyan:active {
+.button--cyan:active,
+.button--cyan:focus-visible {
   background-color: var(--cyan-hover);
 }
 .button--cyan span {
@@ -152,7 +153,8 @@ body {
   background-color: var(--purple-600);
 }
 .button--purple:hover,
-.button--purple:active {
+.button--purple:active,
+.button--purple:focus-visible {
   background-color: var(--purple-hover);
 }
 .button--purple span {
@@ -188,7 +190,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
   }
 
   .logo {
