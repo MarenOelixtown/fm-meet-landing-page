@@ -56,7 +56,7 @@ body {
   margin-top: 4rem;
 }
 .hero {
-  margin: 3rem 2rem 0 2rem;
+  padding: 3rem 2rem 0 2rem;
   max-width: 29rem;
 }
 .hero__heading {
@@ -83,6 +83,7 @@ body {
   justify-content: center;
   gap: clamp(1rem, 2vw, 2rem);
   margin: 4rem 0;
+  max-width: 25rem;
 }
 .content__img-container img {
   border-radius: 10px;
@@ -124,6 +125,13 @@ body {
   color: var(--white);
   max-width: 36rem;
 }
+.hero,
+.content,
+.footer__description,
+.content__img-container {
+  margin-left: auto;
+  margin-right: auto;
+}
 .button {
   display: inline-block;
   color: var(--white);
@@ -162,14 +170,6 @@ body {
 }
 
 @media (min-width: 37em) {
-  .hero,
-  .content,
-  .footer__description,
-  .content__img-container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .button--purple {
     margin-left: 1rem;
   }
@@ -183,7 +183,11 @@ body {
     background-size: cover;
   }
 }
-
+@media (min-width: 56.25em) {
+  .content__img-container {
+    max-width: 100%;
+  }
+}
 @media (min-width: 75em) {
   .header {
     display: flex;
@@ -204,9 +208,11 @@ body {
     margin: 0;
   }
   .hero {
-    padding-left: clamp(0, 4vw, 2rem);
-    padding-right: clamp(0, 4vw, 2rem);
+    padding: 0;
+    padding-left: clamp(0.01rem, 1vw, 2rem);
+    padding-right: clamp(0.01rem, 1vw, 2rem);
   }
+
   .button--cyan {
     margin-bottom: 0;
   }
