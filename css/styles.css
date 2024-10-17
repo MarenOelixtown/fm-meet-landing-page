@@ -24,6 +24,7 @@ html {
 body {
   font-family: "Red Hat Display", sans-serif;
   line-height: 1.5;
+  background-color: var(--white);
   color: var(--slate-900);
   text-align: center;
   min-height: 100vh;
