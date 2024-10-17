@@ -58,7 +58,7 @@ body {
 }
 .hero {
   padding: 3rem 2rem 0 2rem;
-  max-width: 29rem;
+  max-width: 30rem;
 }
 .hero__heading {
   font-size: clamp(3rem, 8vw, 4rem);
