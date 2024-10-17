@@ -45,7 +45,7 @@ Users should be able to:
 
 👉 First time that I used the 'background-image' with the linear-gradient and also first time I created a section devider like this.
 
-👉 I liked using the <picture> element in this way for the desktop media-query without css. Using the <picture> element and the srcset attribute also ensures that only the necessary images are loaded depending on the screen size.
+👉 I liked using the picture-element in this way for the desktop media-query without css. Using the picture-element and the srcset attribute also ensures that only the necessary images are loaded depending on the screen size.
 
 👉I tried to get a smooth transition between the different output sizes. With trial and error I came to the conclusion that if you give an element a max-width and centre it with margin-left and margin-right ‘auto’, you could already achieve a lot. In addition, clamp()-function helped me not only with font-sizes, but also with the scaling of images and spacing.
 
