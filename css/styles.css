@@ -189,7 +189,7 @@ body {
     max-width: 100%;
   }
 }
-@media (min-width: 75em) {
+@media (min-width: 76.875em) {
   .header {
     display: flex;
     flex-wrap: wrap;
